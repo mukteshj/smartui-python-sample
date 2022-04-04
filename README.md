@@ -1,6 +1,5 @@
 # Python-Selenium-Sample-SmartUI
 
-![MSTest](https://opengraph.githubassets.com/8039186e9aebcc17be88d53ac4b85364a56f6aae503057e0ebf36dfcc5b5cc32/LambdaTest/python-selenium-sample)
 
 ## Prerequisites
 
@@ -30,15 +29,8 @@ Step 2. Next we create and Activate the virtual environment in the Python-Seleni
 ```
 virtualenv venv
 source venv/bin/activate
-```
 
-Step 3. Then install required packages.
-
-```
-pip install -r requirements.txt
-```
-
-Step 4. Inside Python-Selenium-Sample folder, export the Lambda-test Credentials. You can get these from your automation dashboard.
+Step 3. Inside Python-Selenium-Sample folder, export the Lambda-test Credentials. You can get these from your automation dashboard.
 
 <p align="center">
    <b>For Linux/macOS:</b>
