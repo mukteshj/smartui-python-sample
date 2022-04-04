@@ -19,18 +19,9 @@ class FirstSampleTest(unittest.TestCase):
             "platform": 'Windows 10',
             # "resolution": '1024x768',# Enable or disable console logs
             "network": 'true',   # Enable or disable network logs
-            # "goog:chromeOptions":{
-            #     "args":[
-            #         "--no-sandbox",
-            #         "--disable-extensions",
-            #         "--disable-gpu",
-            #         "--disable-dev-shm-usage",
-            #         "start-maximized",
-            #         "disable-infobars"
-            #     ],
-            #     "binary":"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
-            # }
             "smartUI.project": "testing-iaf"
+            # Build name for smartUI(optional)
+            # "smartUI.build" : "buildName"
 
         }
         self.driver = webdriver.Remote(
@@ -40,7 +31,6 @@ class FirstSampleTest(unittest.TestCase):
 
 
 # tearDown runs after each test case
-
 
     def tearDown(self):
         self.driver.quit()
