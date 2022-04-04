@@ -50,7 +50,7 @@ set LT_ACCESS_KEY="YOUR ACCESS KEY"
 
 Step 5. To run your first test.
 ```
-python lambdatest.py
+python test.py
 ```
 
 ## About LambdaTest
