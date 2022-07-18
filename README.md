@@ -29,7 +29,7 @@ Step 2. Next we create and Activate the virtual environment in the Python-Seleni
 ```
 virtualenv venv
 source venv/bin/activate
-
+```
 Step 3. Inside Python-Selenium-Sample folder, export the Lambda-test Credentials. You can get these from your automation dashboard.
 
 <p align="center">

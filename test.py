@@ -8,29 +8,27 @@ access_key = os.getenv("LT_ACCESS_KEY")  # Replace the access key
 
 
 class FirstSampleTest(unittest.TestCase):
-    # Generate capabilites from here: https://www.lambdatest.com/capabilities-generator/
+    # Generate capabilities from here: https://www.lambdatest.com/capabilities-generator/
     # setUp runs before each test case and
     def setUp(self):
         desired_caps = {
             "build": 'PyunitTest sample build',  # Change your build name here
             "name": 'Py-unittest',  # Change your test name here
             "browserName": 'Chrome',
-            "version": '92.0',
+            "version": 'latest',
             "platform": 'Windows 10',
-            # "resolution": '1024x768',# Enable or disable console logs
-            "network": 'true',   # Enable or disable network logs
-            "smartUI.project": "testing-iaf"
+            # "resolution": '1024x768', # change the resolution
+            "network": 'true',  # Enable or disable network logs
+            "smartUI.project": "Testing-Smart-UI"
             # Build name for smartUI(optional)
             # "smartUI.build" : "buildName"
-
         }
         self.driver = webdriver.Remote(
             command_executor="https://{}:{}@beta-smartui-hub.lambdatest.com/wd/hub".format(
                 username, access_key),
-            desired_capabilities=desired_caps)
+            desired_capabilities={"LT:Options": desired_caps})
 
-
-# tearDown runs after each test case
+    # tearDown runs after each test case
 
     def tearDown(self):
         self.driver.quit()
