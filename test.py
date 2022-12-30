@@ -41,7 +41,7 @@ class FirstSampleTest(unittest.TestCase):
         # Url
         driver.get("https://lambdatest.com")
         print("Taking screenshot")
-        driver.execute_script("smartui.takeScreenshot", {"screenshotName":"sample-screenshot-1"})
+        driver.execute_script("smartui.takeScreenshot,{\"screenshotName\":\"sample-screenshot-1\"}")
         print("screenshot taken successfully")
 
 
