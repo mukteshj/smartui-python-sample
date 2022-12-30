@@ -24,7 +24,7 @@ class FirstSampleTest(unittest.TestCase):
             # "smartUI.build" : "buildName"
         }
         self.driver = webdriver.Remote(
-            command_executor="https://{}:{}@beta-smartui-hub.lambdatest.com/wd/hub".format(
+            command_executor="https://{}:{}@hub.lambdatest.com/wd/hub".format(
                 username, access_key),
             desired_capabilities={"LT:Options": desired_caps})
 
@@ -41,7 +41,7 @@ class FirstSampleTest(unittest.TestCase):
         # Url
         driver.get("https://lambdatest.com")
         print("Taking screenshot")
-        driver.execute_script("smartui.takeScreenshot")
+        driver.execute_script("smartui.takeScreenshot,{\"screenshotName\":\"sample-screenshot-1\"}")
         print("screenshot taken successfully")
 
 
