@@ -24,7 +24,7 @@ class FirstSampleTest(unittest.TestCase):
             # "smartUI.build" : "buildName"
         }
         self.driver = webdriver.Remote(
-            command_executor="https://{}:{}@beta-smartui-hub.lambdatest.com/wd/hub".format(
+            command_executor="https://{}:{}@hub.lambdatest.com/wd/hub".format(
                 username, access_key),
             desired_capabilities={"LT:Options": desired_caps})
 
