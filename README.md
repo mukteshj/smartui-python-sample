@@ -1,6 +1,8 @@
  Smart UI Testing With Selenium Python ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+ 
+ <img height="400" src="https://user-images.githubusercontent.com/126776938/232534498-27618de9-6625-437e-904f-e94fc0bf38b9.png">
 
-<img height="400" src="https://user-images.githubusercontent.com/70570645/171361733-065df506-c302-452d-8bc7-e63047377f8e.png">
+
 
 <p align="center">
   <a href="https://www.lambdatest.com/blog/?utm_source=github&utm_medium=repo&utm_campaign=playwright-sample" target="_bank">Blog</a>
