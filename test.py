@@ -1,7 +1,8 @@
 import unittest
-import sys
+
 from selenium import webdriver
 import os
+
 
 username = os.getenv("LT_USERNAME")  # Replace the username
 access_key = os.getenv("LT_ACCESS_KEY")  # Replace the access key
@@ -11,7 +12,8 @@ class FirstSampleTest(unittest.TestCase):
     # Generate capabilities from here: https://www.lambdatest.com/capabilities-generator/
     # setUp runs before each test case and
     def setUp(self):
-        desired_caps = {
+        chrome_options = webdriver.ChromeOptions()
+        option = {
             "build": 'PyunitTest sample build',  # Change your build name here
             "name": 'Py-unittest',  # Change your test name here
             "browserName": 'Chrome',
@@ -23,11 +25,12 @@ class FirstSampleTest(unittest.TestCase):
             # Build name for smartUI(optional)
             # "smartUI.build" : "buildName"
         }
+        chrome_options.set_capability("LT:Options", option)
         self.driver = webdriver.Remote(
             command_executor="https://{}:{}@hub.lambdatest.com/wd/hub".format(
                 username, access_key),
-            desired_capabilities={"LT:Options": desired_caps})
-
+            options = chrome_options
+        )
     # tearDown runs after each test case
 
     def tearDown(self):
