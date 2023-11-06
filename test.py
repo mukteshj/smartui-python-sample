@@ -18,7 +18,7 @@ class FirstSampleTest(unittest.TestCase):
             "name": 'Py-unittest',  # Change your test name here
             "browserName": 'Chrome',
             "version": 'latest',
-            "platform": 'Windows 10',
+            "platform": 'Windows 11',
             # "resolution": '1024x768', # change the resolution
             "network": 'true',  # Enable or disable network logs
             "smartUI.project": "Testing-Smart-UI"
